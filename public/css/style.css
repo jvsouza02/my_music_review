@@ -1,3 +1,101 @@
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: Raleway, serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #014ba0;
+    height: 80px;
+    color: black;
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    padding: 40px;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+}
+
+header h1 {
+    display: inline;
+    font-size: 24px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header nav ul li {
+    transition: all 0.3s;
+}
+
+header nav ul li:hover {
+    border-bottom: 1px solid black;
+}
+
+.start {
+    height: 900px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
     color: white;
 }
+
+.start-reviews-btn {
+    background-color: #52667b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.start-reviews-btn:hover {
+    background-color: #7996ac;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.1);
+}
+
+.about {
+    display: flex;
+    background-color: rgb(15, 15, 15);
+    height: 600px;
+    color: white;
+}
+
+.reviews {
+    display: flex;
+    background-color: white;
+    height: 600px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-image: linear-gradient(to right, #3977be, #71a6df, #105183, #011d33);
+    color: white;
+}
+
+
+
+
+
