@@ -102,6 +102,61 @@ footer {
     width: 100%;
 }
 
+.artists {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.artists-search .input-group input {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 8px;
+    outline: none;
+}
+
+.artists-search .input-group button {
+    background-image: linear-gradient(to right, #3977be, #71a6df, #105183);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    margin-left: 10px;
+}
+
+.artists-search .input-group button:hover {
+    filter: brightness(1.2);
+}
+
+.add-artist-btn {
+    background-color: #105183;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add-artist-btn:hover {
+    filter: brightness(1.2);
+}
+
+.add-artist-confirm {
+    padding: 8px 16px;
+    background-color: #105183;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.add-artist-confirm:hover {
+    filter: brightness(1.1);
+}
 
 
 
