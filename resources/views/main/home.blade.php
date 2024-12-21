@@ -8,7 +8,7 @@
         <div class="absolute top-0 flex flex-column z-100 mt-5 align-items-center">
             <h2 class="text-4xl">Your favorite music review website!</h2>
             <p>Make and see reviews of your favorite songs with just a few clicks</p>
-            <a class="start-reviews-btn" href="#">Reviews here</a>
+            <a class="start-reviews-btn" href="{{route('reviews')}}">Reviews here</a>
         </div>
     </section>
     <section class="reviews flex flex-column align-items-center">

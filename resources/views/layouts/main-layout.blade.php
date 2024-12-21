@@ -16,13 +16,13 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Artists</a></li>
-                <li><a href="#">Albums</a></li>
-                <li><a href="#">Reviews</a></li>
+                <li><a href="{{route('artists')}}">Artists</a></li>
+                <li><a href="{{route('reviews')}}">Reviews</a></li>
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
     </header>
+    <div class="separator"></div>
 
     @yield('content')
 
