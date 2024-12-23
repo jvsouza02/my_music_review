@@ -15,7 +15,7 @@
     <header>
         <h1>My Music Review</h1>
         <nav>
-            <ul>
+            <ul class="text-lg">
                 <li><a href="{{route('home')}}">Home</a></li>
                 <li><a href="{{route('artists')}}">Artists</a></li>
                 <li><a href="{{route('reviews')}}">Reviews</a></li>

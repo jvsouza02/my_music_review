@@ -98,7 +98,6 @@ footer {
     height: 80px;
     background-image: linear-gradient(to right, #3977be, #71a6df, #105183, #011d33);
     color: white;
-    bottom: 0;
     width: 100%;
 }
 
@@ -145,7 +144,7 @@ footer {
     filter: brightness(1.2);
 }
 
-.add-artist-confirm {
+.add-artist-confirm, .edit-artist-confirm, .add-song-btn, .add-album-btn {
     padding: 8px 16px;
     background-color: #105183;
     border-radius: 8px;
@@ -154,10 +153,65 @@ footer {
     transition: all 0.3s;
 }
 
-.add-artist-confirm:hover {
+.add-artist-confirm:hover, .edit-artist-confirm:hover {
     filter: brightness(1.1);
 }
 
+.instagram-artist-btn {
+    background-color: #E1306C;
+    transition: all 0.3s;
+}
+
+.instagram-artist-btn:hover {
+    background-color: #C13584;
+    filter: brightness(1.1);
+}
+
+.instagram-artist-btn, .edit-artist-btn, .delete-artist-btn {
+    border-radius: 8px;
+    padding: 2px 6px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.instagram-artist-btn i, .edit-artist-btn i, .delete-artist-btn i {
+    cursor: pointer;
+    color: white;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-name {
+    white-space: wrap; /* Impede que o texto quebre em várias linhas */
+    max-width: 60%; /* Garante que o texto não ultrapasse a largura do contêiner */
+}
+
+.card .card-name {
+    overflow: hidden; /* Esconde o texto que ultrapassa o limite */
+    text-overflow: ellipsis; /* Adiciona reticências ao texto que ultrapassa o limite */
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Limita o texto a 3 linhas */
+    -webkit-box-orient: vertical;
+}
 
 
+.card .card-text {
+    overflow: hidden; /* Esconde o texto que ultrapassa o limite */
+    text-overflow: ellipsis; /* Adiciona reticências ao texto que ultrapassa o limite */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limita o texto a 3 linhas */
+    -webkit-box-orient: vertical;
+}
+
+.albums {
+    height: 100vh;
+}
 

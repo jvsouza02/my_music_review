@@ -19,6 +19,7 @@ return new class extends Migration
             $table->float('artist_rating')->default(0);
             $table->integer('albums_count')->default(0);
             $table->string('youtube_url')->nullable();
+            $table->string('instagram_url')->nullable();
             $table->timestamps();
         });
     }
