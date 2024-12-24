@@ -144,16 +144,16 @@ footer {
     filter: brightness(1.2);
 }
 
-.add-artist-confirm, .edit-artist-confirm, .add-song-btn, .add-album-btn {
+.add-artist-confirm, .edit-artist-confirm, .add-song-btn, .add-album-btn, .edit-album-confirm {
     padding: 8px 16px;
-    background-color: #105183;
+    background-color: #3977be;
     border-radius: 8px;
     color: white;
     cursor: pointer;
     transition: all 0.3s;
 }
 
-.add-artist-confirm:hover, .edit-artist-confirm:hover {
+.add-artist-confirm:hover, .edit-artist-confirm:hover, .edit-album-confirm:hover {
     filter: brightness(1.1);
 }
 
@@ -211,7 +211,16 @@ footer {
     -webkit-box-orient: vertical;
 }
 
+.artist-info {
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 4px 24px 0px rgba(165, 165, 165, 0.1);
+}
+
 .albums {
     height: 100vh;
+}
+
+.albums i {
+    font-size: 19px;
 }
 

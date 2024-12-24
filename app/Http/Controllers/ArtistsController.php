@@ -59,14 +59,15 @@ class ArtistsController extends Controller
         return redirect()->back();
     }
 
-    public function delete(Request $request) {
-        $artist = Artist::find($request->id);
+    public function delete($id) {
+        $artist = Artist::find($id);
         $artist->delete();
         return redirect()->back();
     }
 
-    public function showArtist(Request $request) {
-        $artist = Artist::find($request->id);
-        return view("main.artist-page", compact("artist"));
+    public function showArtist($id) {
+        $artist = Artist::find($id);
+        $albums = $artist->albums;
+        return view("main.artist-profile", compact("artist", "albums"));
     }
 }

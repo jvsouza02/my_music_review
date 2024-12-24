@@ -24,7 +24,7 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header flex justify-content-center align-items-center">
-                        <h5 class="modal-title text-2xl bold" id="addArtistModalLabel">Add Artist</h5>
+                        <h5 class="modal-title text-2xl font-bold" id="addArtistModalLabel">Add Artist</h5>
                         <button type="button" class="btn-close position-absolute end-0 me-2" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
@@ -64,7 +64,7 @@
                     @foreach ($artists as $artist)
                         <div class="flex justify-center flex-wrap">
                             <div class="card w-80">
-                                <a href="{{route('artists.page', $artist->id)}}"><img src="{{ asset('storage/' . $artist->image) }}" class="card-img-top h-48"
+                                <a href="{{route('artists.profile', $artist->id)}}"><img src="{{ asset('storage/' . $artist->image) }}" class="card-img-top h-48"
                                     alt="{{ $artist->name }}" data-bs-toggle="tooltip"
                                     data-bs-placement="top" title="Artist Page"></a>
                                 <div class="card-body">
@@ -88,7 +88,7 @@
                                         </div>
                                     </div>
                                     <p class="card-text mt-2 mb-2 text-md">{{ $artist->description }}</p>
-                                    <a href="{{route('artists.page', $artist->id)}}" class="text-decoration-underline">Albums: {{ $artist->albums_count }}</a>
+                                    <a href="{{route('artists.profile', $artist->id)}}" class="text-decoration-underline">Albums: {{ $artist->albums_count }}</a>
                                     <p>Rate: {{ $artist->artist_rating }}</p>
                                 </div>
                             </div>
